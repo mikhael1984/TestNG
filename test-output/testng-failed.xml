@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" name="Failed suite [Parallel]" parallel="methods">
+  <listeners>
+    <listener class-name="com.epam.module3.listeners.TestListener"/>
+  </listeners>
+  <test name="Parallel trigonometry test(failed)" parallel="methods">
+    <classes>
+      <class name="com.epam.module3.TrigonometryTest">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="prepare"/>
+          <include name="ctgPI"/>
+          <include name="finish"/>
+          <include name="cosPIDiv2"/>
+          <include name="tgPI"/>
+          <include name="config"/>
+          <include name="done"/>
+        </methods>
+      </class> <!-- com.epam.module3.TrigonometryTest -->
+    </classes>
+  </test> <!-- Parallel trigonometry test(failed) -->
+</suite> <!-- Failed suite [Parallel] -->
